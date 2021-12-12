@@ -1,1 +1,1 @@
-web: gunicorn locallibrary.wsgi --log-file
+web: gunicorn simplesite.wsgi --log-file
