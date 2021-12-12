@@ -14,9 +14,6 @@ from pathlib import Path
 import os
 import django_heroku
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -212,3 +209,6 @@ ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 
 # Avoid the 'ConnectionRefusedError at /accounts/signup/' issue.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
