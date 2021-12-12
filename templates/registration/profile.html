@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>user:</h1>
+  <dir>
+    <b>id</b>: {{ id }}<br>
+    <b>email</b>: {{ email }}<br>
+    <b>username</b>: {{ username }}<br>
+  </dir>
+
+  <a href="/accounts/logout/"><p>Logout</p></a>
+{% endblock %}
