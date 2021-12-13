@@ -207,6 +207,9 @@ ACCOUNT_AUTHENTICATION_METHOD = "email"
 # Email should be verifiy before singin.
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 
+# Email don't verifiy if it is social account.
+SOCIALACCOUNT_EMAIL_VERIFICATION = "none"
+
 # Avoid the 'ConnectionRefusedError at /accounts/signup/' issue.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
