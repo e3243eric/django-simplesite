@@ -210,8 +210,8 @@ ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # Email don't verifiy if it is social account.
 SOCIALACCOUNT_EMAIL_VERIFICATION = "none"
 
-# Avoid the 'ConnectionRefusedError at /accounts/signup/' issue.
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# This will avoid the need for an SMTP server as e-mails will be printed to the console.
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
